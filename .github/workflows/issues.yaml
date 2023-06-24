@@ -1,4 +1,4 @@
-name: trigger on issues
+name: Handle issues
 on: issues
 jobs:
   issue-info:
