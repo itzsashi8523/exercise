@@ -2,7 +2,7 @@ name: trigger on issues
 on: issues
 jobs:
   issue-info:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Triiger events on issue creation
         run: echo "${{ toJSON(github.event) }}"
