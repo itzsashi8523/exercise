@@ -11,7 +11,7 @@ jobs:
       - name: Lint
         run: npm run lint
   deploy:
-  needs: lint
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -25,7 +25,7 @@ jobs:
       - name: Deploy Code
         run: echo "Code Deployed"
   test:
-  needs: deploy
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Get code
