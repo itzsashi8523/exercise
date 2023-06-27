@@ -1,0 +1,8 @@
+name: practicing-all
+on: [push, workflow_dispatch]
+jobs:
+  display-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: display all info related to repo
+        run: echo "{{ toJSON(github.event) }}"
